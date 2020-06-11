@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contanier {
+    width: 80%;
+    margin: auto;
+    overflow-x: hidden;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+
+/* Esas css codlari */
+
+/* showecase hissesinin baslangici */
+#showecase {
+    position: relative;
+    background-image: linear-gradient(to right bottom, rgba(63, 65, 62, 0.8), rgba(102, 102, 102, 0.8)), url("../img/showcase.jpg");
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+
+#showecase .showecase__box .showecase__title {
+    position: relative;
+    font-size: 70px;
+    color: transparent;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+#showecase .showecase__box .showecase__title::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-right: 1px solid #fff;
+    color: #fff;
+    animation: type 5s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes type {
+
+    0% {
+        width: 0%;
+    }
+
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0%;
+    }
+}
+
+
+#showecase .showecase__box .showecase__border {
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+
+
+#showecase .showecase__box .showecase__data {
+    color: #fff;
+
+}
+
+
+/* showecase hissesinin sonu */
+
+
+
+/* Hedear hissesinin baslangici */
+
+
+#header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #f9f9f8;
+    padding: 20px 0;
+    widows: 100%;
+    z-index: 5;
+}
+
+#header #nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header #nav .nav__list {
+    list-style: none;
+
+}
+
+
+#header #nav .nav__list li {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 0 10px;
+    font-size: 15px;
+    font-weight: bolder;
+
+}
+
+
+/* Hedear hissesinin sonu */
+
+
+/* History hissesinin baslangici */
+#history {
+    padding: 120px 0 90px;
+}
+
+
+#history .leftSite,
+#history .rightSite {
+    margin: 20px 0;
+    width: 50%;
+    padding: 0 20px;
+}
+
+
+
+#history .leftSite .photo img,
+#history .rightSite .photo img {
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+
+#history .leftSite .details,
+#history .rightSite .details {
+    position: relative;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: -30px auto 30px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 20px;
+
+}
+
+#history .leftSite .details .details__title,
+#history .rightSite .details .details__title {
+    font-family: 'Great Vibes', cursive;
+    padding: 20px 0;
+
+}
+
+
+#history .leftSite .details .details__text,
+#history .rightSite .details .details__text {
+    font-size: 14px;
+    line-height: 26px;
+    color: #535353;
+
+}
+
+
+#history .leftSite .details .details__list,
+#history .rightSite .details .details__list {
+    padding: 20px 0;
+    list-style: none;
+
+}
+
+
+#history .leftSite .details .details__list li,
+#history .rightSite .details .details__list li {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+
+}
+
+
+
+#history .leftSite .details .details__list .facebook,
+#history .rightSite .details .details__list .facebook {
+    background: blue;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+#history .leftSite .details .details__list .facebook:hover,
+#history .rightSite .details .details__list .facebook:hover {
+    background: #3a5795;
+}
+
+
+
+#history .leftSite .details .details__list .instagram,
+#history .rightSite .details .details__list .instagram {
+    background: purple;
+    transition: all 0.5s ease-in-out;
+}
+
+
+#history .leftSite .details .details__list .instagram:hover,
+#history .rightSite .details .details__list .instagram:hover {
+    background-color: rosybrown;
+}
+
+
+
+#history .leftSite .details .details__list i,
+#history .rightSite .details .details__list i {
+    color: #fff;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+#history .leftSite .details .details__list i:hover,
+#history .rightSite .details .details__list i:hover {
+    color: #000000;
+}
+
+/* History hissesinin sonu */
+
+
+
+
+#Date {
+    position: relative;
+    background-image: url("../img/Lovers.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0px;
+}
+
+.time__box {
+    float: left;
+    width: 33.3%;
+    margin: 0px 20px;
+    background-color: black;
+    opacity: 0.5;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+#Sponsors {
+    background-color: #f9f9f8;
+    padding: 120px 0 90px;
+}
+
+
+.sponsors__img {
+    padding: 40px 0;
+}
+
+.sponsors__img {
+    width: 100%;
+}
+
+
+#footer {
+    position: relative;
+    background-image: url("../img/Lovers.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 600px;
+}
